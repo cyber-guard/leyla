@@ -74,7 +74,7 @@ $(document).ready(function() {
         
         $.ajax({
             type: "POST",
-            url: "process.php",
+            url: "https://formspree.io/kalimullina92@gmail.com",
             data: "name=" + name + "&email=" + email + "&message=" + message,
             success : function(text){
                 if (text == "success"){
@@ -88,7 +88,7 @@ $(document).ready(function() {
     }
     function formSuccess(){
         $("#contactForm")[0].reset();
-        submitMSG(true, "Message Sent!")
+        submitMSG(true, "Сообщение отправлено!")
     }
     function formError(){
         $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
